@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000;
+}
+/*--------------------------------------H-E-A-D-E-R---------------------------------------------*/
+
+/*#header{
+   width: 100%;
+}*/
+.container-fluid{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.616);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.808);
+}
+.logo{
+    width: 300px;
+    height: 200;
+    position: absolute;
+    left: 20px;
+}
+.menu ul{
+    margin-top: 15px;
+    display: flex;
+}
+.menu ul li{
+    list-style:none;
+    margin: 10px;
+}
+.menu ul li a{
+    color: white;
+    transition: 1s;
+}
+.menu ul li a:hover{
+    letter-spacing: 2px;
+    color: rgb(4, 100, 163);
+    transition: 1s;
+}
+.redes{
+    position: absolute;
+    right: 300px;
+}
+.redes a{
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    transition: 1s;
+}
+.redes a:hover{
+    color: rgb(4, 100, 163);
+    transition: 1s;
+}
+.menu-fixed{
+	position:fixed;
+    background-color:#000000a8;
+	z-index:1000;
+	top:0;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(15, 15, 15, 0.5);
+    transition: 1s;
+}
+.zona-client{
+    position: absolute;
+    right: 50px;
+    padding-top: 16px
+} 
+.zona-client ul{
+    display: flex;
+}
+.zona-client ul li{
+    list-style: none;
+    border-bottom: 1px solid red;
+    padding: 3px
+}
+.zona-client ul li a{
+    color: white;
+}
+.inicio{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/fondoroyal.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info{
+    width: 300px;
+    height: 80%;
+    background-color: #000000c9;
+    position: relative;
+    border-radius: 5px;
+    float: left;
+    top: 20px;
+    left: 50px;
+    padding-top: 40px;
+    box-shadow:0px 0px 5px 5px rgba(7, 7, 7, 0.568);
+}
+.linea{
+    background-color: rgba(255, 255, 255, 0.678);
+    height: 1px;
+    width: 300px;
+    box-shadow:0px 5px 5px 2px rgba(255, 255, 255, 0.568);
+}
+.info.conocenos, h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.info.conocenos, p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.conocenos{
+    width: 300px;
+    height: 80%;
+    background-color: #000000c9;
+    position: relative;
+    border-radius: 5px;
+    float: left;
+    top: 20px;
+    left: 220px;
+    padding-top: 40px;
+    box-shadow:0px 0px 5px 5px rgba(7, 7, 7, 0.568);
+    color: white;
+}
+.oportunidad{
+    width: 300px;
+    height: 80%;
+    background-color: #000000c9;
+    position: relative;
+    border-radius: 5px;
+    float: right;
+    top: 20px;
+    right: 50px;
+    padding-top: 40px;
+    box-shadow:0px 0px 5px 5px rgba(7, 7, 7, 0.568);
+}
+.oportunidad h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.oportunidad p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.oportunidad ul li{
+    list-style: none;
+    color: white;
+    margin-left: 80px;
+}
+.oportunidad.info.conocenos, button{
+    height: 40px;
+    width: 140px;
+    margin-left: 80px;
+    margin-top: 20px;
+    outline:none; 
+    text-align: center;
+    border-radius: 33px 8px;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #243B55, #141E30);  
+    background: linear-gradient(to top, #243B55, #141E30); 
+    color: white;
+    border:1px solid #ffffff;
+    transition: 1s;  
+}
+.oportunidad.info.conocenos, button a{
+    color: white;
+    font-size: 15px;
+}
+
+.oportunidad.info, button:hover{
+    transition: 1s;
+    background: #141e308f;
+    border:2px solid #464646;
+    outline: none;
+}
+.oportunidad.info, button a:hover{
+    color: white;
+    transition: 1s;
+    text-decoration: none;
+    outline: none;
+}
+
+.round {
+    position: absolute;
+    /*border: 3px solid rgba(2, 4, 126, 0.774);*/
+    width: 50px;
+    height: 50px;
+    background-color: darkgray;
+    border-radius: 100%;;
+    bottom: 35px;
+    left: 645px;
+    cursor: pointer;
+}
+.round1 {
+    position: absolute;
+    /*border: 3px solid rgba(2, 4, 126, 0.774);*/
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    margin-top: 160px;
+    left: 645px;
+    cursor: pointer;
+}
+.round2{
+    position: absolute;
+    /*border: 3px solid rgba(2, 4, 126, 0.774);*/
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    margin-top: 540px;
+    left: 645px;
+    cursor: pointer;
+}
+span {
+    z-index: 999;
+    height: 2px;
+    margin:0px;
+    width: 14px;
+    background: rgba(0, 0, 0, 0.712);
+    transition: 0.4s ease;
+}
+
+span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+/*-----------------round-------------*/
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
+/*-----------------round1-------------*/
+.round1:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round1:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round1:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round1:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
+
+/*-----------------round2-------------*/
+.round2:hover span:nth-child(1) {
+    transform: rotate(135deg);
+}
+
+.round2:hover span:nth-child(2) {
+    transform: rotate(-135deg);
+}
+
+.round2:hover span:nth-child(3) {
+    transform: rotate(-225deg);
+}
+
+.round2:hover span:nth-child(4) {
+    transform: rotate(225deg);
+}
+/*-----------------finround-------------*/
+
+/*-----------------QUIENES SOMOS-------------*/
+#quienesomos{
+    width: 100%;
+    height: 650px;
+    padding-top: 50px;
+    background-image: url(../img/fondo1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sobre-empresa{
+    height: 200px;
+    width: 100%;
+    background: #000000ab;
+    padding-top: 30px;
+
+}
+.sobre-empresa h1,p{
+    color: white;
+    text-align: center;
+}
+.equipo{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.izq{
+    height:250px;
+    width: 350px;
+    background: #000000ab;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px 3px rgb(0, 0, 0);
+}
+.centro{
+    height:250px;
+    width: 350px;
+    background: #000000ab;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px 3px rgb(0, 0, 0);
+
+}
+.derecha{
+    height:250px;
+    width: 350px;
+    background: #000000ab;
+    float: right;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px 3px rgb(0, 0, 0);
+    border:3px solid rgba(0, 0, 0, 0.377) ;
+}
+.equipo{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#contacto{
+    width: 100%;
+    height: 645px;
+    padding-top: 50px;
+    background-image: url(../img/fondo3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.form{
+    background: #16161650;
+    height: 500px;
+    width: 48%;
+    margin-top: 35px;
+    margin-left: 25px;
+    box-shadow:0px 0px 5px 5px rgba(7, 7, 7, 0.568);
+    text-align: center;
+    align-items: center;
+}
+form{
+    margin-top: 10px;
+}
+input{
+    color: white;
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: none;
+    overflow: hidden;
+    background: #606c8886;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f4c6bb9, #606c88a4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f4c6bad, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:0px 0px 5px 5px rgba(7, 7, 7, 0.568);
+    outline: none;
+    padding-left: 20px;
+}
+::placeholder{
+color: white;
+}
+.chek{
+    height: 15px;
+    width: 15px;
+    margin-right: 40px;
+}
+textarea{
+    background-color: #0000008a;
+    color: white;
+}
+.info-cont{
+    height: 400px;
+    width: 48%;
+    margin-top: 90px;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.829);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow:0px 0px 5px 5px rgba(7, 7, 7, 0.568);
+}
+.info-cont li{
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+}
+.info-cont li a{
+    color: white;
+    text-shadow: 3px 3px #0000009c;
+}
+.info-cont li p{
+    text-shadow: 4px 4px #000000a4;
+}
+.info-cont li i{
+   color: rgba(255, 255, 255, 0.884);
+   margin-right: 5px;
+}
+.info-cont li p a:hover{
+    text-decoration: none;
+    color: #022e57;
+}
+.info-cont li p a i:hover{
+    text-decoration: none;
+    color: #022e57;
+}
+
+/*-----------------------CIERRE SECTION CONTACTO--------------------------------------*/
+

@@ -1,0 +1,125 @@
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 5px 2px;
+    background-color: #022e57;
+    border-color: #022e57;
+    opacity: 0.7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 0.8;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 5em;    
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
+}
+.hero h3 {
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 1s all ease-in-out .1s;
+       -moz-transition: 1s all ease-in-out .1s; 
+        -ms-transition: 1s all ease-in-out .1s; 
+         -o-transition: 1s all ease-in-out .1s; 
+            transition: 1s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 0.8;
+    -webkit-transition: 1s all ease-in-out .1s;
+       -moz-transition: 1s all ease-in-out .1s; 
+        -ms-transition: 1s all ease-in-out .1s; 
+         -o-transition: 1s all ease-in-out .1s; 
+            transition: 1s all ease-in-out .1s;    
+}
+
+/********************************/
+/*          Custom Buttons      /********************************//*
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero{
+    color: white;
+    background-color: #022e57;
+    border-color: #022e57;
+    outline: none;
+    margin: auto;
+}<button class="btn btn-hero btn-lg" role="button">Recetas</button>*/
+.hero a{
+  text-decoration: none;
+  font-size: 18px;
+  padding:8px 18px;
+  color: white;
+  outline: none;
+  background: #141E30;
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);  
+  background: linear-gradient(to top, #243B55, #141E30);
+  border: 1px solid #ffffff;
+  border-radius: 33px 8px;
+  transition: 0.8s;
+}
+.hero a:hover{
+  text-decoration: none;
+  background-color: rgb(0, 66, 121);
+  border-radius: 8px 33px;
+  transition: 0.8s;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(../cocina1.jpg); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(../cocina2.jpg);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(../cocina3.jpg);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
