@@ -77,14 +77,14 @@
 			<button><a href="oplaboral.html">Oportunidad laboral</a></button>
 		</div>
 
-<!--FLECHA PARA ABAJOOO-->
+<!--FLECHA PARA ABAJOO-->
 <a href="#quienesomos"><div class="round">
 	<span></span>
 	<span></span>
 	<span></span>
 	<span></span>
 </div></a> 
-<!-- FINNNNNNNNN FLECHA PARA ABAJOOO-->
+<!-- FIN FLECHA PARA ABAJOOO-->
 </section><!------------CIERRE INICIO---------->
 
 	<section id="quienesomos"><!------------APERTURA QUIENES SOMOS---------->
@@ -138,7 +138,7 @@
                 <label style="color:white;"> Mensaje</label><br>
                 <textarea name="mensaje" cols="50" rows="3"></textarea>
 <br>
-                <label for="terminos" style="color: white; margin-right: 50px;"><!--CAMBIAR A ESTILOS CUANDO NO ESTE RE LOCO-->
+                <label for="terminos" style="color: white; margin-right: 50px;">
                     acepta los terminos y condiciones
                     <input type="checkbox" name="terminos" id="terminos" value="acepta" style="height: 15px;width: 15px; margin-left: 40px;">
                 </label>
@@ -180,14 +180,14 @@
                 <br>
             </li> 
         </div>
-        <!--FLECHA PARA ABAJOOO-->
+        <!--FLECHA PARA ABAjO-->
 <a href="#inicio"><div class="round2">
 	<span></span>
 	<span></span>
 	<span></span>
 	<span></span>
 </div></a> 
-<!-- FINNNNNNNNN FLECHA PARA ABAJOOO-->
+<!-- FIN FLECHA PARA ABAJO-->
     </section><!-- CIERRE DE SECTION CONTACTO -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap.js"></script>
