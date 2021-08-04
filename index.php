@@ -66,7 +66,7 @@
 			<div class="linea"></div>
 			<br>
 			<ul>
-				<li><i class="fa fa-check" aria-hidden="true" style="color: rgba(4, 97, 24, 0.719);"></i></i>lorem consectetur</li>
+				<li><i class="fa fa-check" aria-hidden="true" style="color: rgba(4, 97, 24, 0.719);"></i>lorem consectetur</li>
 				<li><i class="fa fa-check" aria-hidden="true" style="color: rgba(4, 97, 24, 0.719);"></i>amet sin</li>
 				<li><i class="fa fa-check" aria-hidden="true" style="color: rgba(4, 97, 24, 0.719);"></i>nam recusandae</li>
 				<li><i class="fa fa-check" aria-hidden="true" style="color: rgba(4, 97, 24, 0.719);"></i> ipsum elit</li>
